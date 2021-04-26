@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}"/>
+    <title>{{ title }}</title>
+</head>
+<body>
+<div class="header">
+    <a class="header-logo" href="#">Tim pizza</a>
+    <button class="header-login">Login
+
+    </button>
+</div>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/home">Домой</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/talktous">Связаться с нами</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/aboutus">About us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="talktous-info">
+        <form action="/talktous" method="post">
+            <div class="mb-3">
+                <label for="first_name" class="form-label">Имя</label>
+                <input type="text" class="form-control" placeholder="Имя" id="first_name" aria-label="first_name" name="first_name">
+            </div>
+            <div class="mb-3">
+                <label for="last_name" class="form-label">Фамилия</label>
+                <input type="text" class="form-control" placeholder="Фамилия" id="last_name" aria-label="last_name" name="last_name">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Номер телефона</label>
+                <input type="text" class="form-control" placeholder="Номер телефона" id="phone" aria-label="phone" name="phone">
+            </div>
+            <div class="mb-3">
+                <label for="emailHelp" class="form-label">Электронная почта</label>
+                <input type="email" class="form-control" placeholder="message@mail.com" id="emailHelp" aria-describedby="emailHelp" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="messege" class="form-label">Сообщение</label>
+                <textarea class="form-control" id="messege"  rows="3" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+
+    </div>
+</div>
+
+</body>
+
+</html>

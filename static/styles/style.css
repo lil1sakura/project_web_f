@@ -1,0 +1,79 @@
+body{
+margin: 0;}
+
+
+
+a{
+font-size:20px;
+}
+
+form.login_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    background-color: #fccc30;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.header{
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    height: 50px;
+}
+
+.header-logo{
+float: left;
+}
+.header-login{
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+  float: right;
+}
+
+.card-img-top{
+    height: 225px;
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    display: block;
+}
+
+/* Contact us */
+
+.block_info{
+text-align: center;
+}
+
+/* Login form */
+.form-login-div{
+    margin: auto;
+    margin-top: 200px;
+    height: 350px;
+    width: 40%;
+
+}
+
+/* Register form */
+
+.form-register-div{
+    margin: auto;
+    margin-top: 200px;
+    height: 350px;
+    width: 40%;
+
+}
